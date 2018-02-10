@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_zxing_code"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="study.com.androidfunctions.qr_code.ZxingCodeActivity">
+
+    <TextView
+        android:id="@+id/tv_1"
+        style="@style/tvMenu"
+        android:text="二维码扫描"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#333333"
+        />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_marginTop="50dp"
+        style="@style/tvMenu"
+        android:text="扫描结果"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#333333"
+        />
+
+</LinearLayout>

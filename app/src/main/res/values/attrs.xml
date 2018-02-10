@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IndicatorView">
+        <attr name="iv_width" format="integer"/>
+        <attr name="iv_height" format="integer"/>
+        <!--指示器文本的大小-->
+        <attr name="iv_text_size" format="integer"/>
+        <!--指示器普通文本的颜色-->
+        <attr name="iv_normal_text_color" format="color|reference"/>
+        <!--指示器选中文本的颜色-->
+        <attr name="iv_choose_text_color" format="color|reference"/>
+        <!--PopupWindow的背景色-->
+        <attr name="iv_popup_window_color" format="color|reference"/>
+        <!--PopupWindow的文字颜色-->
+        <attr name="iv_popup_window_text_color" format="color|reference"/>
+        <!--PopupWindow的文字大小-->
+        <attr name="iv_popup_window_text_size" format="integer"/>
+    </declare-styleable>
+</resources>

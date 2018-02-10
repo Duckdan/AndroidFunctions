@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="study.com.androidfunctions">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".refresh.MainRefreshActivity">
+        </activity>
+        <activity android:name=".refresh.SmartRefreshActivity">
+        </activity>
+        <activity android:name=".refresh.UltraRefreshActivity">
+        </activity>
+        <activity android:name=".suspend.LvSuspendActivity">
+        </activity>
+        <activity android:name=".suspend.RvSuspendActivity">
+        </activity>
+        <activity android:name=".suspend.MainSuspendActivity">
+        </activity>
+        <activity android:name=".qr_code.MainCodeActivity">
+        </activity>
+        <activity android:name=".qr_code.ZxingCodeActivity">
+        </activity>
+        <activity android:name=".qr_code.ScanCodeActivity">
+        </activity>
+        <activity android:name=".contact.MainContactActivity">
+        </activity>
+        <activity android:name=".contact.FirstContactActivity">
+        </activity>
+        <activity android:name=".contact.SecondContactActivity">
+        </activity>
+    </application>
+
+</manifest>

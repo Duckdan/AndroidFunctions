@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_1"
+        android:orderInCategory="100"
+        android:title="显示加载中"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_2"
+        android:orderInCategory="100"
+        android:title="显示无数据"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_3"
+        android:orderInCategory="100"
+        android:title="显示加载失败"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_4"
+        android:orderInCategory="100"
+        android:title="显示无网络"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_5"
+        android:orderInCategory="100"
+        android:title="显示内容"
+        app:showAsAction="never"/>
+</menu>

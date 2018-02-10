@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="study.com.androidfunctions.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_1"
+                style="@style/tvMenu"
+                android:text="Android刷新控件合集"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#333333"
+                />
+
+            <TextView
+                android:id="@+id/tv_2"
+                style="@style/tvMenu"
+                android:text="Android列表悬停"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#333333"
+                />
+
+            <TextView
+                android:id="@+id/tv_3"
+                style="@style/tvMenu"
+                android:text="Android二维码扫描"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#333333"
+                />
+
+            <TextView
+                android:id="@+id/tv_4"
+                style="@style/tvMenu"
+                android:text="Android联系人列表"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#333333"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
