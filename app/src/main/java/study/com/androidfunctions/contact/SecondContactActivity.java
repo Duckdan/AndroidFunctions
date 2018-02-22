@@ -3,8 +3,11 @@ package study.com.androidfunctions.contact;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -58,6 +61,7 @@ public class SecondContactActivity extends AppCompatActivity {
     }
 
     private void initRecyclerView() {
+        //不能添加以下两个属性，因为LQRRecyclerView自身已经设置了，再次设置会影响滑动点击效果
 //        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 //        recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
@@ -141,7 +145,7 @@ public class SecondContactActivity extends AppCompatActivity {
         });
 
 
-//        adapter.addHeaderView(headerView);
+        adapter.addHeaderView(headerView);
         //添加尾部布局
         View inflate = View.inflate(this, R.layout.list_data_item, null);
         inflate.setBackgroundColor(Color.GRAY);
@@ -159,8 +163,27 @@ public class SecondContactActivity extends AppCompatActivity {
             public void onItemClick(String letter) {
                 Map<String, Integer> keyMap = PinyinUtils.keyMap;
                 Integer integer = keyMap.get(letter);
+//                if (integer != null) {
+//                    recyclerView.moveToPosition(integer);
+//                }
+
                 if (integer != null) {
-                    recyclerView.moveToPosition(integer);
+
+                    LinearLayoutManager manager = (LinearLayoutManager) recyclerView.getLayoutManager();
+                    int height = manager.getChildAt(1).getHeight();
+
+                    if (integer == 0) {
+                        LinearLayout layout = adapter.getHeaderLayout();
+                        manager.scrollToPositionWithOffset(integer, -layout.getHeight());
+                        Log.e("index", layout.getHeight() + "===");
+                    } else {
+                        manager.scrollToPositionWithOffset(integer, -height - 50);
+                        //实现悬浮窗的第二种方法==============在版本1里面有代码=====================
+//                        mIndex = integer+1;
+//                        method2(integer, manager);
+                    }
+
+
                 }
             }
         });
