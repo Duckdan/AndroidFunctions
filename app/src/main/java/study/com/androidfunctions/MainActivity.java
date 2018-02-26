@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import study.com.androidfunctions.contact.MainContactActivity;
+import study.com.androidfunctions.header.MainHeaderActivity;
 import study.com.androidfunctions.qr_code.MainCodeActivity;
 import study.com.androidfunctions.refresh.MainRefreshActivity;
 import study.com.androidfunctions.suspend.MainSuspendActivity;
@@ -25,15 +26,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv3.setOnClickListener(this);
         TextView tv4 = (TextView) findViewById(R.id.tv_4);
         tv4.setOnClickListener(this);
+        TextView tv5 = (TextView) findViewById(R.id.tv_5);
+        tv5.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.tv_1:  //Android刷新合集
+            case R.id.tv_1://Android刷新合集
                 jumpActivity(MainRefreshActivity.class);
                 break;
-            case R.id.tv_2: //Android悬停列表合集
+            case R.id.tv_2://Android悬停列表合集
                 jumpActivity(MainSuspendActivity.class);
                 break;
             case R.id.tv_3://Android二维码扫描合集
@@ -42,6 +45,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tv_4://Android联系人列表
                 jumpActivity(MainContactActivity.class);
                 break;
+            case R.id.tv_5://Android适配7.0相机拍照
+                jumpActivity(MainHeaderActivity.class);
+                break;
+
         }
     }
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <!--path的值可以赋值为当前应用的名称缩写，之后头像将会生成在外部存储中以该名称缩写的文件夹中-->
+        <!--path为""时，优先级最低。如果没有找到合适的匹配，那么就用这个为默认的-->
+        <external-path
+            name="head"
+            path=""/>
+
+        <external-path
+            name="file"
+            path="heads"/>
+
+    </paths>
+</resources>

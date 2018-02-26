@@ -65,6 +65,18 @@
                 android:layout_height="1px"
                 android:background="#333333"
                 />
+
+            <TextView
+                android:id="@+id/tv_5"
+                style="@style/tvMenu"
+                android:text="Android适配7.0相机拍照"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#333333"
+                />
         </LinearLayout>
     </ScrollView>
 
