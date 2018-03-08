@@ -10,6 +10,7 @@ import study.com.androidfunctions.contact.MainContactActivity;
 import study.com.androidfunctions.header.MainHeaderActivity;
 import study.com.androidfunctions.qr_code.MainCodeActivity;
 import study.com.androidfunctions.refresh.MainRefreshActivity;
+import study.com.androidfunctions.soft.SoftInputActivity;
 import study.com.androidfunctions.suspend.MainSuspendActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv4.setOnClickListener(this);
         TextView tv5 = (TextView) findViewById(R.id.tv_5);
         tv5.setOnClickListener(this);
+        TextView tv6 = (TextView) findViewById(R.id.tv_6);
+        tv6.setOnClickListener(this);
     }
 
     @Override
@@ -47,6 +50,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_5://Android适配7.0相机拍照
                 jumpActivity(MainHeaderActivity.class);
+                break;
+            case R.id.tv_6:
+                jumpActivity(SoftInputActivity.class);
                 break;
 
         }

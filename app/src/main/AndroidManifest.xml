@@ -19,40 +19,42 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <!--刷新-->
+        <!-- 刷新 -->
         <activity android:name=".refresh.MainRefreshActivity">
         </activity>
         <activity android:name=".refresh.SmartRefreshActivity">
         </activity>
         <activity android:name=".refresh.UltraRefreshActivity">
         </activity>
-        <!--悬挂-->
+        <!-- 悬挂 -->
         <activity android:name=".suspend.LvSuspendActivity">
         </activity>
         <activity android:name=".suspend.RvSuspendActivity">
         </activity>
         <activity android:name=".suspend.MainSuspendActivity">
         </activity>
-        <!--扫描-->
+        <!-- 扫描 -->
         <activity android:name=".qr_code.MainCodeActivity">
         </activity>
         <activity android:name=".qr_code.ZxingCodeActivity">
         </activity>
         <activity android:name=".qr_code.ScanCodeActivity">
         </activity>
-        <!--联系人-->
+        <!-- 联系人 -->
         <activity android:name=".contact.MainContactActivity">
         </activity>
         <activity android:name=".contact.FirstContactActivity">
         </activity>
         <activity android:name=".contact.SecondContactActivity">
         </activity>
-        <!--头像-->
+        <!-- 头像 -->
         <activity android:name=".header.MainHeaderActivity">
         </activity>
 
-        <!--设置android:exported属性为false；FileProvider不需要公开。
-        设置android:grantUriPermissions属性为true，为了允许你进行临时访问文件的授权。-->
+        <!--
+        设置android:exported属性为false；FileProvider不需要公开。
+        设置android:grantUriPermissions属性为true，为了允许你进行临时访问文件的授权。
+        -->
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="study.com.androidfunctions.fileprovider"
@@ -63,6 +65,8 @@
                 android:resource="@xml/head_path"/>
         </provider>
 
+        <activity android:name=".soft.SoftInputActivity">
+        </activity>
     </application>
 
 </manifest>
